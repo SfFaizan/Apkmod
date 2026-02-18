@@ -3,14 +3,14 @@
 ## 💎 Premium Brandable Domain Available
 
 **Domain Name:** Apkmod.in  
-**Price:** ₹6,000 Only  
+**Price:** ₹1,0000 Only  
 **Contact:** WhatsApp - 8449197945  
 
 ---
 
 ## 📌 About The Domain
 
-Apkmod.in is a short, powerful and brandable domain name.  
+Apkmod.in is a shrt, powerful and brandable domain name.  
 Perfect for:
 
 - APK Download Website
@@ -23,7 +23,7 @@ Perfect for:
 
 ## 🌐 Live Website
 
-👉 https://apkmod.in
+👉 https://www.apkmod.in
 
 ---
 
