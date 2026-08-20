@@ -324,9 +324,76 @@ h1{
   100%{ transform: translate(30px, 40px); }
 }
 
+/* Skeleton Loading Animation */
+.loading-skeleton h1,
+.loading-skeleton .tagline,
+.loading-skeleton .price,
+.loading-skeleton .intro-text,
+.loading-skeleton .detail-card,
+.loading-skeleton .btn,
+.loading-skeleton .ad-card {
+  position: relative !important;
+  overflow: hidden !important;
+  background: rgba(255, 255, 255, 0.08) !important;
+  color: transparent !important;
+  border-color: rgba(255, 255, 255, 0.05) !important;
+  pointer-events: none !important;
+  text-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+.loading-skeleton h1 *,
+.loading-skeleton .tagline *,
+.loading-skeleton .price *,
+.loading-skeleton .intro-text *,
+.loading-skeleton .detail-card *,
+.loading-skeleton .btn *,
+.loading-skeleton .ad-card * {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.loading-skeleton h1::after,
+.loading-skeleton .tagline::after,
+.loading-skeleton .price::after,
+.loading-skeleton .intro-text::after,
+.loading-skeleton .detail-card::after,
+.loading-skeleton .btn::after,
+.loading-skeleton .ad-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 20%, rgba(255,255,255,0.15) 50%, rgba(255,255,255,0.05) 80%, rgba(255,255,255,0) 100%);
+  animation: shimmer 1.5s infinite;
+  z-index: 10;
+}
+
+.loading-skeleton h1,
+.loading-skeleton .tagline,
+.loading-skeleton .price,
+.loading-skeleton .intro-text {
+  border-radius: 8px;
+}
+
+@keyframes shimmer {
+  100% { transform: translateX(100%); }
+}
 </style>
 </head>
 <body>
+<script>
+  document.body.classList.add('loading-skeleton');
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.body.classList.remove('loading-skeleton');
+    }, 2500);
+  });
+</script>
 
 <main class="container">
   <!-- Integrated Ad Section -->
